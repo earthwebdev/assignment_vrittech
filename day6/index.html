@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em css concept</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* .container{ */
+        /*     font-size: 20px; */
+        /* }  */
+        /*  */
+        /* EM Unit -- related to closet parent tag */
+        /* h1{ */
+        /*     text-align: center; */
+        /*     font-size: 2em; */
+        /* } */
+
+        /* REM Unit  -- related to global tag  */
+        /* html { */
+        /*     font-size: 10px; */
+        /*     */
+        /*     */
+        /* }    */
+        /* p{ */
+        /*     font-size: 3rem; */
+        /* }   */
+        /*  */
+        /* div{ */
+        /*     border: 1px solid red; */
+        /*     width: 100vw; */
+        /*     height: 100vh; */
+        /* } */
+
+        /* h1, h2, h3{ */
+        /*     border: 1px solid red; */
+        /*     display: inline; */
+        /* } */
+        /* .container{ */
+        /*     border: 1px solid red; */
+        /*     width: auto; */
+        /*     height: auto; */
+        /*     margin: auto; */
+        /*     display: flex; */
+        /*     flex-direction: column; */
+        /*     justify-content: center; */
+        /*     align-items: center; */
+
+        /*     flex-wrap: wrap; */
+        /* } */
+        /* #item-2{ */
+        /*     order: 4; */
+        /*     flex-grow: 4; */
+        /* } */
+        /* #item-1{ */
+        /*     order: 3; */
+        /*     flex-shrink: 4; */
+        /* } */
+        /* .content{ */
+        /*     border: 1px solid red; */
+        /*      width: 100px; */
+        /*     height: 100px; */
+        /*     margin: 5px; */
+        /* } */
+        nav.container{
+            display: flex;
+            justify-content: space-around;
+            width: calc(100vw - 20px);
+            height: 60px;
+            background-color: #787574ba;
+            align-items: center;
+        }
+        h3{
+            cursor: pointer;
+            color: green;
+        }
+        nav ul.menu{
+            list-style-type: none;
+            display: flex;
+        }
+
+        ul.menu li{
+            margin-right: 10px;
+        }
+
+        ul.menu li a{
+            text-decoration: none;
+            color:white;
+            padding: 2px;
+            text-transform: uppercase;
+             
+        }
+        ul.menu li a:hover{
+            color: #787574ba;
+            background-color: white;
+        }
+        .button-contact{
+            border-radius: 10px;
+            height: 30px;
+            width: 80px;
+            background-color: #11e9f3;
+            border-color: #11e9f3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+    <!--     this is test contain in contianer. -->
+    <!--     <h1>hellow world</h1> -->
+    <!--     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati labore id nemo quis, vitae cupiditate odit quas nam voluptatum corrupti temporibus veniam culpa. Modi facilis, facere tempora deleniti sed dolorum.</p> -->
+
+    <!-- </div> -->
+    <!--  -->
+    <!-- display element block or inline -->
+    <!-- <h1>Hello world</h1> -->
+    <!-- <h2>Hello world</h2> -->
+    <!-- <h3>Hello world</h3> -->
+    <!-- <div class="container"> -->
+    <!--     <div class="content" id="item-1">Box 1</div> -->
+    <!--     <div class="content" id="item-2">Box 2</div> -->
+    <!--     <div class="content" id="item-3">Box 3</div> -->
+    <!--     <div class="content" id="item-4">Box 4</div> -->
+    <!--     <div class="content" id="item-4">Box 5</div> -->
+    <!--     <div class="content" id="item-4">Box 6</div> -->
+    <!--     <div class="content" id="item-4">Box 7</div> -->
+    <!--  -->
+    <!-- </div> -->
+    <header>
+        <nav class="container">
+            <h3 class="logo">Vrit Technologies</h3>
+            <ul class="menu">
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <button class="button-contact">Contact Us</button>
+        </nav>
+    </header>
+</body>
+</html>
