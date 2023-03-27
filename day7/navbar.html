@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Media Query</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        nav.container{
+            display: flex;
+            justify-content: space-around;
+            width: calc(100vw - 20px);
+            height: 60px;
+            background-color: #787574ba;
+            align-items: center;
+        }
+        h3{
+            cursor: pointer;
+            color: green;
+        }
+        nav ul.menu{
+            list-style-type: none;
+            display: flex;
+        }
+
+        ul.menu li{
+            margin-right: 10px;
+        }
+
+        ul.menu li a{
+            text-decoration: none;
+            color:white;
+            padding: 2px;
+            text-transform: uppercase;
+             
+        }
+        ul.menu li a:hover{
+            color: #787574ba;
+            background-color: white;
+        }
+        .button-contact{
+            border-radius: 10px;
+            height: 30px;
+            width: 80px;
+            background-color: #11e9f3;
+            border-color: #11e9f3;
+            color: white;
+        }
+        .smallscreen{
+                display: none;
+            }
+
+        @media screen and (max-width: 768px) {
+            nav.container{
+                width: 100%;
+            }
+            .button-contact, nav ul.menu{
+                display: none;
+            }
+            .smallscreen, .smallscreen ul.menu {
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <h3 class="logo">Vrit Technologies</h3>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Faq</a></li>
+            </ul>
+            <button class="button-contact">Contact Us</button>
+            <div class="smallscreen">
+                <div class="icon"><i class="fa fa-bars"></i></div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Faq</a></li>
+                </ul>
+            </div>            
+        </nav>
+    </header>
+</body>
+</html>
