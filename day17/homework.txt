@@ -1,0 +1,6 @@
+Assignment 1: Vrit students lister : Add a new student into the list when you add and click submit button.
+Assignment 2: Check palidrome number/string
+
+Hint:a word, phrase, or number that reads the same backwards as forwards: eg- madam, 1221, papap
+
+Assignment 3: Check prime numbers/odd/even (only for those who have not completed this assignment)
